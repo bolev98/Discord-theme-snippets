@@ -106,9 +106,9 @@
       }
     }
   
-    .contents__201d5:not(.buttonInner_fb7f94) {
+    /* .contents__201d5:not(.buttonInner_fb7f94) {
       display: none;
-    }
+    } */
   
     .header__5be3e {
       min-height: 0px;
