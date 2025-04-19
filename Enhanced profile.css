@@ -1,8 +1,12 @@
 /* was made by @bolev98 aka @bolev983 */
 
+:root {
+  --pronouns-border: 2px solid var(--background-primary);
+}
+
 .biteSize_c0bea0 {
     overflow: visible !important;
-  
+    
     .footer__5be3e {
       display: none !important;
     }
@@ -16,7 +20,7 @@
       display: block;
     }
   
-    .container_ab8609 {
+    .container_ab8609 { /* status */
       position: absolute;
       left: 0px;
       top: -8px;
@@ -56,11 +60,11 @@
     }
   
     .nickname__63ed3 {
-      word-wrap: normal;
+      /* word-wrap: normal; */
       max-height: 24px;
       white-space: nowrap;
       text-overflow: ellipsis;
-      max-width: 150px;
+      max-width: 130px;
     }
   
     .tags__63ed3 .clickableUsername__63ed3 {
@@ -73,39 +77,58 @@
     }
   
     .container__8061a {
+      margin-top: 2px !important;
+      padding: 2px !important;
+
       position: absolute;
       top: -40px;
       left: 109px;
       max-width: 90px;
-      max-height: 22px;
-      width: auto;
+      max-height: 24px;
+      height: fit-content;
+      width: fit-content;
       flex-direction: row;
-      height: auto;
+      align-items: center;
       overflow: hidden;
       background-color: rgba(0, 0, 0, 0.25);
-      border-radius: 4px;
+      border-radius: 8px;
       z-index: 1;
       backdrop-filter: blur(5px);
+      
       &:hover {
         background-color: rgba(73, 73, 73, 0.25);
-        max-width: 154px;
+        max-width: 110px;
         max-height: fit-content;
       }
     }
   
     .mutuals__530ce {
       position: absolute;
-      top: 8px;
-      margin-left: calc(100% - 44px - 32px);
-  
+      top: 16px;
+      right: 0px;
+
       .text__530ce,
       .spacer__530ce {
         display: none;
       }
-  
-      .avatars_ef4a91 {
-        width: 44px !important;
-        justify-content: right;
+
+      .avatars_ef4a91 { /* mutual friends */
+        transform: translateY(-100%);
+        transform-origin: bottom right;
+        /* flex-direction: row; */
+
+        padding: 4px;
+        background-color: rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(5px);
+        border-radius: 8px;
+        
+        position: absolute;
+        right: 6px;
+        bottom: 6px;
+        z-index: 1;
+        &:hover {
+          background-color: rgba(49, 49, 49, 0.25);
+        }
       }
     }
   
@@ -136,11 +159,24 @@
     }
   
     .body__5be3e {
-      padding-top: 8px !important;
-      overflow: visible!important;
+      overflow: visible !important;
+      padding: 4px 10px 10px 10px !important;
+    }
+    .inner_c0bea0 {
+      padding: 0px !important;
     }
   
-  
+    .pronounsTooltip__63ed3 {
+      padding: 4px !important;
+      border-radius: 8px;
+      /* background-color: rgba(0, 0, 0, 0.336); */
+      background-color: var(--background-code);
+      border: 2px solid var(--border-normal);
+      /* &::before{
+        content: "Pronouns";
+      } */
+    }
+
     .mask__68edb,
     .banner__68edb {
       overflow: visible;
@@ -148,13 +184,13 @@
       width: 100% !important;
       contain: none !important;
       min-height: 100% !important;
-      border-radius: 8px 8px 8px 8px;
+      border-radius: 8px;
       box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
     }
 
     .biteSize_da5890{
       div button{
-        border-radius: 6px;
+        border-radius: 8px;
         height: 1.5rem;
         width: 1.5rem;
       }
