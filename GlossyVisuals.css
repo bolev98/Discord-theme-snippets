@@ -1,0 +1,63 @@
+/* made by bolev98 aka bolev983 */
+
+/* Bottom Left Activity and profile widget */
+/* ======================================= */
+:root{
+    --activityBG: color-mix(in srgb, var(--background-surface-high) 50%, transparent);
+    --profileWidgetBG: color-mix(in srgb, var(--neutral-95) 50%, transparent);
+
+    --glossy-autocompleteBG: color-mix(in srgb, var(--autocomplete-bg) 80%, transparent);
+}
+
+.sidebar_c48ade {
+    .privateChannels__35e86{
+        .scroller__99e7c {
+            margin-bottom: var(--space-8);
+            padding-bottom: calc(120px - var(--space-8));
+        }
+    }
+    
+    .panels_c48ade{
+        /* display: none; */
+        background: var(--profileWidgetBG) !important;
+        backdrop-filter: blur(10px);
+        
+        .panel__5dec7 {
+            background: var(--activityBG);
+        }
+    }
+
+    .container__2637a {
+        padding-bottom: 0px;
+        .scroller__629e4 {
+            padding-bottom: 112px;
+        }
+    }
+
+    .guilds_c48ade {
+        margin-bottom: 0px;
+
+        .itemsContainer_ef3116 > .stack_dbd263::after{
+            content: "";
+            padding-bottom: 120px;
+        }
+    }
+}
+
+/* :emoji: pop-up panel */
+/* ======================================= */
+
+.form_f75fb0 {
+    
+    .autocomplete__13533 {
+        background: var(--glossy-autocompleteBG);
+        backdrop-filter: blur(16px);
+    }
+
+    .channelBottomBarArea_f75fb0{
+        background: transparent;
+        .channelTextArea_f75fb0 {
+            background: transparent;
+        }
+    }
+}
