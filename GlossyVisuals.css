@@ -67,3 +67,12 @@
 .backdrop__78332 {
     backdrop-filter: blur(8px) !important;
 }
+
+/* quick reactions */
+/* ======================================= */
+.buttonContainer_c19a55 {
+    .wrapper_f7ecac  {
+        background: transparent;
+        backdrop-filter: blur(8px);
+    }
+}
